@@ -1,0 +1,86 @@
+açýklamalar - ayný yöntemleri izleyerek itemde ekleyebilirsiniz.
+
+
+1- login
+
+http://localhost/stable/login/ - post
+
+{
+  "email" : "oldu@gmail.com",
+  "password" : "123456",
+  "apikey" : "13"
+    
+}
+
+2- kullanýcý listeleme -
+
+
+/* giriþte verilen tokeni yollamanýz gerekmektedir. */
+
+http://localhost/stable/login/all - post
+
+{
+   "myapi" : "13",
+   "secret" : "stableDeneme"
+
+}
+
+
+3- kullanýcý tek çekim
+
+/* giriþte verilen tokeni yollamýnýz gerekmektedir */
+
+
+http://localhost/stable/login/single - post
+
+
+{
+    "id" : "??",
+   "myapi" : "13",
+   "secret" : "stableDeneme"
+
+}
+
+
+4- kullanýcý oluþturma 
+
+/* giriþte verilen tokeni yollamanýz gerekmektedir */
+
+http://localhost/stable/login/register - post
+
+{
+    "email" : "??",
+   "password" : "??",
+   "apikey" : "??",
+   "status" : "??",
+   "myapi" : "13",
+   "secret" : "stableDeneme"
+
+}
+
+5 - kullanýcý update 
+
+/* giriþte verilen tokeni yollamanýz gerekmektedir */
+http://localhost/stable/login/update - post
+{
+    "id" : "??",
+    "email" : "??",
+   "password" : "??",
+   "apikey" : "??",
+   "status" : "??",
+   "myapi" : "13",
+   "secret" : "stableDeneme"
+
+}
+
+6 - kullanýcý delete 
+
+/* giriþte verilen tokeni yollamanýz gerekmektedir */
+
+http://localhost/stable/login/delete - post
+
+{
+  "id" : "??",
+   "myapi" : "13",
+   "secret" : "stableDeneme"
+}
